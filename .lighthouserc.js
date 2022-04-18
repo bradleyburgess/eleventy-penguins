@@ -4,7 +4,10 @@ module.exports = {
       staticDistDir: "_site"
     },
     assert: {
-      preset: "lighthouse:no-pwa"
+      preset: "lighthouse:no-pwa",
+      assertions: {
+        "csp-xss": "off"
+      }
     }
   }
 };
