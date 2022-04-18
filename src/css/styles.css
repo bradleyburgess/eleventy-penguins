@@ -48,9 +48,9 @@ picture {
   left: 0;
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.6);
-  animation-name: fadeIn;
+  /* animation-name: fadeIn;
   animation-timing-function: ease-in;
-  animation-duration: 0.75s;
+  animation-duration: 0.75s; */
 }
 
 .center-this {
