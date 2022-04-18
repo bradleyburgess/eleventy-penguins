@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+*,
+*::before,
+*::afterer {
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  display: block;
+  position: relative;
+  max-width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.03;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  animation-name: fadeIn;
+  animation-timing-function: ease-in;
+  animation-duration: 0.75s;
+}
+
+.center-this {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-shadow: 2px 2px black, 1px 1px black;
+  z-index: 1000;
+  font-family: sans;
+  font-size: 4rem;
+  color: white;
+}
