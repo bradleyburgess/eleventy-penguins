@@ -10,4 +10,4 @@ jobs:
           node-version: 14
       - run: yarn && npm install -g @lhci/cli@0.8.x
       - run: yarn build
-      - run: lhci autorun --collect.staticDistDir=_site
+      - run: lhci autorun
