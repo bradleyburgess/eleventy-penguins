@@ -8,6 +8,9 @@ module.exports = {
       assertions: {
         "csp-xss": "off"
       }
+    },
+    upload: {
+      target: "temporary-public-storage"
     }
   }
 };
